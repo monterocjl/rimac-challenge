@@ -1,0 +1,22 @@
+@import '_colors.scss';
+
+.main {
+  color: $color-text-paragraph;
+
+  .main__header {
+    width: 100%;
+    position: absolute;
+  }
+  
+  .main__container {
+    display: flex;
+  }
+  @media screen and (max-width: 860px) {
+    .main__container {
+        display: block;
+    }
+  }
+}
+
+
+

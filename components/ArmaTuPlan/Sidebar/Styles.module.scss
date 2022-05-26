@@ -1,0 +1,17 @@
+@import '../../../styles/colors';
+
+.main {
+  min-height: 100vh;
+  min-width: 408px;
+  background: $color-background;
+}
+
+@media screen and (max-width: 860px) {
+  .main {
+    min-width: 0px;
+    width: 100%;
+    background: white;
+    height: 48px;
+    min-height: 0;
+  }
+}

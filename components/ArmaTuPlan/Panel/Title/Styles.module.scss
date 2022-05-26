@@ -1,0 +1,46 @@
+@import '../../../../styles/colors';
+
+.main {
+  .main__title_desktop {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    color: $color-text-heading;
+    margin: 24px 0 10px 0;
+
+    span {
+      color: $color-red-rimac
+    }
+  }
+
+  .main__subtext {
+    color: $color-text-paragraph;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    margin: 0;
+  }
+
+  .main__title_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .main {
+    .main__title_desktop {
+      display: none;
+    }
+    .main__title_mobile {
+      display: block;
+      color: $color-text-heading;
+      font-size: 28px;
+      line-height: 36px;
+      margin-top: 40px;
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+  }
+  
+}

@@ -1,0 +1,75 @@
+@import '../../../../styles/colors';
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+  padding-bottom: 43px;
+  border-bottom: 1px solid $color-gray-5;
+
+  .main__info {
+    .main__info__text {
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: $color-text-heading;
+    }
+    .main__info__number {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.6px;
+      color: $color-text-paragraph;
+    }
+
+  }
+
+  .main__actions {
+    width: 160px;
+    height: 56px;
+    border: 1px solid $color-gray-4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+    button {
+      min-width: 0;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background: none;
+    }
+
+    div {
+      color: $color-text-heading;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .main {
+    margin: 0;
+    padding: 44px 32px 0px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: none;
+
+    .main__actions {
+      width: 100%;
+      justify-content: space-between;
+      border-radius: 4px;
+      padding: 0 7px;
+      
+      button {
+        width: fit-content;
+        padding: 0 8px;
+      }
+    }
+  }
+  
+}

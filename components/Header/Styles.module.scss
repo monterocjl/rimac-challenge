@@ -1,0 +1,56 @@
+@import '../../styles/colors';
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 32px;
+
+  .main__contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .main__contact__text {
+    display: none;
+  }
+
+  .main__contact__number{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $color-secundary-1;
+    font-size: 14px;
+
+    .main__contact__number__phone {
+      display: none;
+    }
+
+    .main__contact__number_text {
+      display: block;
+    }
+  }
+}
+
+
+@media screen and (min-width: 860px) {
+  .main {
+    .main__contact__text {
+      display: block;
+      font-size: 12px;
+    }
+    .main__contact__number {
+      .main__contact__number__phone {
+        display: block;
+      }
+      .main__contact__number__text {
+        display: none;
+      }
+    }
+  }
+}

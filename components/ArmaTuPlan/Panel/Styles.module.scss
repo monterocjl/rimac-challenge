@@ -1,0 +1,67 @@
+@import '../../../styles/colors';
+
+.main {
+  padding-top: 48px;
+  padding-left: 96px;
+  width: 100%;
+
+  .main__back {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .main__back__button {
+      width: 24px;
+      height: 24px;
+      border-radius: 50px;
+      border: 1px solid $color-red-rimac;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(90deg);
+    }
+
+    .main__back__text {
+      color: $color-text-paragraph-1;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+
+    }
+  }
+
+  .main__container {
+    display: flex;
+    align-items: flex-end;
+    gap: 96px;
+  
+
+    .main__container__userInfo {
+      width: fit-content;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .main {
+    padding: 0;
+
+    .main__back {
+      display: none;
+    }
+
+    .main__container {
+      display: block;
+      width: 100%;
+
+      .main__container__userInfo {
+        width: 100%;
+        .main__banner {
+          background: $color-background;
+          display: flex;
+          flex-direction: column;
+          padding: 0 32px;
+        }
+      }
+    }
+  }  
+}

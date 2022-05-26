@@ -1,0 +1,102 @@
+@import '../../../../styles/colors';
+
+.main {
+    margin-bottom: 28px;
+    width: 224px;
+
+    .main__total {
+        border-bottom: 1px solid $color-gray-5;
+        padding-bottom: 19px;
+        margin-bottom: 24px;
+
+        .main__total__text {
+            font-size: 12px;
+            color: $color-text-heading;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .main__total__number {
+            font-size: 28px;
+            color: $color-text-heading;
+            line-height: 36px;
+            margin-bottom: 4px;
+        }
+
+        .main__total__subtext {
+            font-size: 12px;
+            line-height: 20px;
+            color: $color-text-paragraph;
+        }
+    }
+
+    .main__additional {
+        .main__additional_text {
+            font-size: 16px;
+            color: $color-text-heading;
+            line-height: 24px;
+        }
+        .main__additional_list {
+            margin-top: 16px;
+
+            .main__additional_list__item {
+                display: flex;
+                gap: 16px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    button {
+        height: 48px;
+        width: 100%;
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .main {
+        z-index: 10;
+        width: 100%;
+        height: 76px;
+        padding: 0 32px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0px 1px 4px rgb(163 171 204 / 6%), 0px 8px 30px rgb(20 43 127 / 10%);
+
+        .main__total {
+            border-bottom: none;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+    
+            .main__total__text {
+                display: none;
+            }
+    
+            .main__total__number {
+                font-size: 24px;
+                line-height: 20px;
+            }
+    
+            .main__total__subtext {
+                font-size: 10px;
+                line-height: 16px;
+            }
+        }
+
+        .main__additional {
+            display: none;
+        }
+
+        button {
+            margin: 0;
+            width: 168px;
+        }
+    }
+    
+}
