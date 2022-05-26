@@ -38,7 +38,7 @@ export default function Index() {
         Enviaremos la confirmación de compra de tu Plan Vehícular Tracking a tu correo:
         </div>
         <div className={style.main__text__email}>
-          {user.email}
+          {user?.email}
         </div>
         <button>
           CÓMO USAR MI SEGURO

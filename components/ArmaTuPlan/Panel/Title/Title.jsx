@@ -7,7 +7,7 @@ export default function Title() {
     <>
       <div className={style.main}>
         <h2 className={style.main__title_desktop}>
-          ¡Hola, <span>{user.name}! </span>
+          ¡Hola, <span>{user?.name}! </span>
         </h2>
         <h2 className={style.main__title_mobile}>Mira las coberturas</h2>
 
