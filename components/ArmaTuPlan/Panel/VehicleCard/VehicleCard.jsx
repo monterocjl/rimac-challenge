@@ -8,9 +8,9 @@ export default function VehicleCard() {
     <>
       <div className={style.main}>
         <div className={style.main__info}>
-          <div className={style.main__info__car_plate}>Placa: {user.plate}</div>
+          <div className={style.main__info__car_plate}>Placa: {user?.plate}</div>
           <div className={style.main__info__car_model}>
-            {user.carModel}
+            {user?.carModel}
           </div>
         </div>
 
