@@ -5,7 +5,6 @@ import useUser from "../../hooks/useUser"
 
 export default function Index() {
   const { user, total } = useUser()
-  console.log(total)
 
   return (
     <>
